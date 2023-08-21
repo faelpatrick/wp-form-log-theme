@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Roboto Mono", monospace;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#customForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 10px #000000aa;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  height: 35px;
+  padding: 0 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+textarea#message {
+  border: solid 2px;
+  height: 120px;
+}
+
+button {
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hidden-label {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 0.5;
+}
+input:focus:-moz-placeholder {
+  color: #ccc;
+  opacity: 0.5;
+}
+
+input:focus + .hidden-label,
+textarea:focus + .hidden-label,
+textarea:not(:placeholder-shown) + .label,
+input:not(:placeholder-shown) + .label {
+  opacity: 1;
+  display: block;
+  position: relative;
+  top: -3.8rem;
+  left: 1.7rem;
+  background: #fff;
+  width: fit-content;
+  padding: 0 0.4rem;
+}
+
+textarea:focus + .hidden-label,
+textarea:not(:placeholder-shown) + .label {
+  top: -148px;
+}
