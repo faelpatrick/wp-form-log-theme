@@ -71,6 +71,7 @@ function save_form_data()
         update_post_meta($post_id, 'phone', $phone);
         update_post_meta($post_id, 'email', $email);
         echo 'Success';
+        wp_redirect(home_url());
     } else {
         echo 'Error';
     }

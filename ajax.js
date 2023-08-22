@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
             data: formData,
             success: function(response) {
                 alert(response);
+                window.location = "/";
             },
             error: function() {
                 alert("Error.");

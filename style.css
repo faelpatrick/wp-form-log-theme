@@ -77,13 +77,15 @@ h3 {
   text-align: center;
   font-family: "Roboto Mono", monospace;
   font-weight: 900;
+  border-bottom: solid 1px;
 }
 
 .form-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
+  align-items: flex-start;
+  margin-top: 2rem;
 }
 
 #customForm {
@@ -269,6 +271,7 @@ textarea:not(:placeholder-shown) + .label {
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
+    width: -webkit-fill-available;
   }
   
   .custom-field.field-phone {
@@ -345,4 +348,3 @@ textarea:not(:placeholder-shown) + .label {
     padding: 1rem;
   }
 }
-
